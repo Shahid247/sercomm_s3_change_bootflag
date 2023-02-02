@@ -1,0 +1,28 @@
+OEM MTD Layout
+Creating 10 MTD partitions on "MT7621-NAND":
+0x000000000000-0x000000100000 : "Boot Loader"
+0x000000100000-0x000000200000 : "dynamic partition map"
+0x000000200000-0x000000300000 : "Factory"
+0x000000300000-0x000000400000 : "Boot Flag"
+0x000000400000-0x000000a00000 : "Kernel 1"
+0x000000a00000-0x000001000000 : "Kernel 2"
+0x000001000000-0x000003000000 : "File System 1"
+0x000003000000-0x000005020000 : "File System 2"
+0x000005020000-0x000006420000 : "Configuration/log"
+0x000006420000-0x000007f80000 : "Debug (Ftool)"
+
+
+OpenWrt MTD Layout
+root@OpenWrt:/# cat /proc/mtd
+dev:    size   erasesize  name
+mtd0: 00100000 00020000 "u-boot"
+mtd1: 00100000 00020000 "dynamic partition map"
+mtd2: 00100000 00020000 "Factory"
+mtd3: 00100000 00020000 "Boot Flag"
+mtd4: 00600000 00020000 "kernel"
+mtd5: 00600000 00020000 "Kernel 2"
+mtd6: 02000000 00020000 "File System 1"
+mtd7: 02020000 00020000 "File System 2"
+mtd8: 01400000 00020000 "Configuration/log"
+mtd9: 01b60000 00020000 "application tmp buffer (Ftool)"
+mtd10: 04f60000 00020000 "ubi"
