@@ -1,4 +1,4 @@
-# sercomm_s3_change_bootflag
+# sercomm_s3_change_bootflag_to_install_OpenWrt
 edited config file for sercomm s3 router
 
 Upload Sercomm_s3_config.cfg to your router
