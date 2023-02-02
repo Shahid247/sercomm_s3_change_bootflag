@@ -1,24 +1,2 @@
 Here are the OEM Backup files from Sercomm S3
-
-Here is the Partition Layout
-
-
-0x000000000000-0x000000100000 : "Boot Loader"
-
-0x000000100000-0x000000200000 : "dynamic partition map"
-
-0x000000200000-0x000000300000 : "Factory"
-
-0x000000300000-0x000000400000 : "Boot Flag"
-
-0x000000400000-0x000000a00000 : "Kernel 1"
-
-0x000000a00000-0x000001000000 : "Kernel 2"
-
-0x000001000000-0x000003000000 : "File System 1"
-
-0x000003000000-0x000005020000 : "File System 2"
-
-0x000005020000-0x000006420000 : "Configuration/log"
-
-0x000006420000-0x000007f80000 : "Debug (Ftool)"
+Firmware Files i.e mtd6 & mtd7 are in compressed zip format. unzip & use binary .bin file only.
